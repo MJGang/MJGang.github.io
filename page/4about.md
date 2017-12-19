@@ -9,7 +9,7 @@ type: page
 * content
 {:toc}
 
-## 关于我
+## 个人信息
 
 web前端工程师
 
@@ -19,7 +19,7 @@ web前端工程师
 * 2017.5  入职南京博纳睿通软件科技有限公司
 * 2015.7  毕业于南京金陵科技学院（土木工程）
 
-## 联系我
+## 联系方式
 
 * GitHub：[MJGang](https://github.com/MJGang)
 * email：xiaog_web@163.com
