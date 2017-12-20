@@ -64,8 +64,23 @@ layout: default
 
         {% include previousAndNext.html %}
 
-        <h2 id="comments">Comments</h2>
-        {% include comments.html %}
+        <h2 id="comments">全部评论</h2>
+<!--        {% include comments.html %} -->
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+		// id: '页面 ID', // 可选。默认为 location.href
+		owner: 'MJGang',
+		repo: 'MJGang.github.io',
+		oauth: {
+			client_id: '2d9125dcfa43a1232e59',
+			client_secret: 'c41c0d46c6c65e1af14c8947f7fdd24e5dc10fb4',
+		},
+	})
+	gitment.render('container')
+	</script>
 
 
     </div>
@@ -76,13 +91,13 @@ layout: default
             <!-- Content -->
             <div class="side content">
                 <div>
-                    Content
+                    content
                 </div>
                 <ul id="content-side" class="content-ul">
                     {% if hasSimilar.size > 0 %}
                     <li><a href="#similar_posts">Similar Posts</a></li>
                     {% endif %}
-                    <li><a href="#comments">Comments</a></li>
+                    <li><a href="#comments">评论</a></li>
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
